@@ -1,29 +1,22 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
   "name": "player-locker",
-  "version": "1.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "mineflayer": "^3.9.0"
   },
-  "engines": {
-    "node": "14.x"
-  },
   "repository": {
-    "url": ""
+    "type": "git",
+    "url": "git+https://github.com/hecker-men/Player-Locker.git"
   },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ],
-  "author": "Heckermen",
-  "devDependencies": {}
+  "bugs": {
+    "url": "https://github.com/hecker-men/Player-Locker/issues"
+  },
+  "homepage": "https://github.com/hecker-men/Player-Locker#readme",
+  "description": ""
 }
