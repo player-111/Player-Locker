@@ -10,6 +10,7 @@ const jfree = require('./jfree.js');
 const abyys = require('./abyys.js');
 const daddy = require('./daddy.js');
 const egg = require('./eggplant.js ');
+const hauntear = require('./hauntear.js ');
 var options = {
     host: 'mc.mineberry.net',
     username: 'andre2dolars',
