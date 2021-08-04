@@ -1,5 +1,14 @@
 var mineflayer = require('mineflayer');
 const ice = require('./iceplant.js');
+const sting = require('./sting.js');
+const lucy = require('./lucy.js');
+const zak = require('./zak.js');
+const tim = require('./tim.js');
+const dxtr = require('./dxtr.js');
+const xanity = require('./xanity.js');
+const jfree = require('./jfree.js');
+const abyys = require('./abyys.js');
+const hauntear = require('./haunter.js');
 var options = {
     host: 'mc.mineberry.net',
     username: 'andre2dolars',
