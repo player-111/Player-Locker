@@ -2,7 +2,7 @@ var mineflayer = require('mineflayer');
 
 var options = {
     host: 'mc.mineberry.net',
-    username: 'Xaniity',
+    username: 'LucyLazy',
     version: "1.8.9",
 };
 //andre
