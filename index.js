@@ -8,7 +8,7 @@ const dxtr = require('./dxtr.js');
 const xanity = require('./xanity.js');
 const jfree = require('./jfree.js');
 const abyys = require('./abyys.js');
-const hauntear = require('./haunter.js');
+const hauntear = require('./hauntear.js');
 const daddy = require('./daddy.js');
 var options = {
     host: 'mc.mineberry.net',
