@@ -1,4 +1,4 @@
-var mineflayer = require('mineflayer');
+var mine = require('mineflayer');
 
 var options = {
     host: 'mc.mineberry.net',
