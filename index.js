@@ -54,3 +54,83 @@ function bindEvents(bot1) {
     }
 }
 
+var options2 = {
+    host: 'mc.mineberry.net',
+    username: 'Xaniity',
+    version: "1.8.9",
+};
+
+var bot2 = mineflayer.createBot(options2);
+bindEvents(bot2);
+
+function bindEvents(bot2) {
+
+    bot2.on('error', function(err) {
+        console.log("Bot has encountered an error");
+    });
+
+    bot2.on('end', function() {
+        console.log("Bot has ended");
+        setTimeout(relog, 0);
+    });
+
+    function relog() {
+        console.log("reconnecting");
+        bot = mineflayer.createBot(options2);
+        bindEvents(bot);
+    }
+}
+
+var options3 = {
+    host: 'mc.mineberry.net',
+    username: 'StingEucliffe_',
+    version: "1.8.9",
+};
+
+var bot3 = mineflayer.createBot(options3);
+bindEvents(bot3);
+
+function bindEvents(bot3) {
+
+    bot3.on('error', function(err) {
+        console.log("Bot has encountered an error");
+    });
+
+    bot3.on('end', function() {
+        console.log("Bot has ended");
+        setTimeout(relog, 0);
+    });
+
+    function relog() {
+        console.log("reconnecting");
+        bot = mineflayer.createBot(options3);
+        bindEvents(bot);
+    }
+}
+
+var options4 = {
+    host: 'mc.mineberry.net',
+    username: 'Zakreedanub',
+    version: "1.8.9",
+};
+
+var bot4 = mineflayer.createBot(options4);
+bindEvents(bot4);
+
+function bindEvents(bot4) {
+
+    bot4.on('error', function(err) {
+        console.log("Bot has encountered an error");
+    });
+
+    bot4.on('end', function() {
+        console.log("Bot has ended");
+        setTimeout(relog, 0);
+    });
+
+    function relog() {
+        console.log("reconnecting");
+        bot = mineflayer.createBot(options4);
+        bindEvents(bot);
+    }
+}
