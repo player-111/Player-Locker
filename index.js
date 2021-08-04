@@ -144,3 +144,144 @@ function bindEvents(bot3) {
       bindEvents(bot);
     });
 }
+
+function bindEvents(bot4) {
+    bot4.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot4.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options4);
+      bindEvents(bot);
+    });
+}
+function bindEvents(bot5) {
+    bot5.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot5.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options5);
+      bindEvents(bot);
+    });
+}
+
+function bindEvents(bot6) {
+    bot6.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot6.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options6);
+      bindEvents(bot);
+    });
+}
+
+function bindEvents(bot7) {
+    bot7.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot7.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options7);
+      bindEvents(bot);
+    });
+}
+
+function bindEvents(bot8) {
+    bot8.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot8.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options8);
+      bindEvents(bot);
+    });
+}
+
+function bindEvents(bot9) {
+    bot9.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot9.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options9);
+      bindEvents(bot);
+    });
+}
+
+function bindEvents(bot10) {
+    bot10.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot10.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options10);
+      bindEvents(bot);
+    });
+}
+
+function bindEvents(bot11) {
+    bot11.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot11.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options11);
+      bindEvents(bot);
+    });
+}
+function bindEvents(bot12) {
+    bot12.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot12.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options12);
+      bindEvents(bot);
+    });
+}
+
+function bindEvents(bot13) {
+    bot13.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot13.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options13);
+      bindEvents(bot);
+    });
+}
+
+function bindEvents(bot14) {
+    bot14.on('login', function() {
+      console.log("I logged in.");
+    });
+
+    bot14.on('kicked', function(reason) {
+      console.log("I got kicked for", reason, "lol");
+
+      bot = mineflayer.createBot(options14);
+      bindEvents(bot);
+    });
+}
