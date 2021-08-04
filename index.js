@@ -5,32 +5,8 @@ var options = {
     username: 'andre2dolars',
     version: "1.8.9",
 };
-var options1 = {
-    host: 'mc.mineberry.net',
-    username: 'LucyLazy',
-    version: "1.8.9",
-};
-var options2 = {
-    host: 'mc.mineberry.net',
-    username: 'Hauntear',
-    version: "1.8.9",
-};
-var options3 = {
-    host: 'mc.mineberry.net',
-    username: 'iceplant',
-    version: "1.8.9",
-};
-var options4 = {
-    host: 'mc.mineberry.net',
-    username: 'Xaniity',
-    version: "1.8.9",
-};
 //andre
 var bot = mineflayer.createBot(options);
-bot = mineflayer.createBot(options1)
-bot = mineflayer.createBot(options2)
-bot = mineflayer.createBot(options3)
-bot = mineflayer.createBot(options4)
 bindEvents(bot);
 
 function bindEvents(bot) {
@@ -46,7 +22,7 @@ function bindEvents(bot) {
 
     function relog() {
         console.log("reconnecting");
-        bot = mineflayer.createBot(options,options1,options2,options3,options4);
+        bot = mineflayer.createBot(options);
         bindEvents(bot);
     }
 }
