@@ -6,17 +6,11 @@ var options = {
 
 var bot = mineflayer.createBot(options);
 
-bindEvents(bot);
-
-function bindEvents(bot) {
     bot.on('login', function() {
       console.log(`I logged in as ${bot.username}`);
     });
 
     bot.on('kicked', function(reason) {
       console.log("I got kicked for", reason, "lol");
-
       bot = mineflayer.createBot(options);
-      bindEvents(bot);
-    });
-}
+});
