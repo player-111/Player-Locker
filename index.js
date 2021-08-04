@@ -1,16 +1,28 @@
 var mineflayer = require('mineflayer');
+
 var options = {
-  host: "mc.mineberry.net",
-  username: "iceplant",
+    host: 'mc.mineberry.net',
+    username: 'iceplant',
+    version: "1.8.9",
 };
 
 var bot = mineflayer.createBot(options);
+bindEvents(bot);
 
-    bot.on('login', function() {
-      console.log(`I logged in as ${bot.username}`);
+function bindEvents(bot) {
+
+    bot.on('error', function(err) {
+        console.log("Bot has encountered an error");
     });
 
-    bot.on('kicked', function(reason) {
-      console.log("I got kicked for", reason, "lol");
-      bot = mineflayer.createBot(options);
-});
+    bot.on('end', function() {
+        console.log("Bot has ended");
+        setTimeout(relog, 0);
+    });
+
+    function relog() {
+        console.log("reconnecting");
+        bot = mineflayer.createBot(options);
+        bindEvents(bot);
+    }
+}
