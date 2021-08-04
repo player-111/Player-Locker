@@ -1,4 +1,8 @@
 var mineflayer = require('mineflayer');
+var options = {
+  host: "mc.mineberry.net",
+  username: "iceplant",
+};
 var options1 = {
   host: "mc.mineberry.net",
   username: "andre2dolars",
