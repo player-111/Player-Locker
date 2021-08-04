@@ -5,7 +5,12 @@ const bot = mineflayer.createBot({
   username: 'andre2dolars'
 })
 
-bot.on('kicked', console.log)
+bot.on('kicked', function(reason) {
+    const bot = mineflayer.createBot({
+  host: 'eu.mineberry.net',
+  username: 'andre2dolars'
+})
+    });
 bot.on('error', console.log)
 //2
 const bot2 = mineflayer.createBot({
