@@ -37,7 +37,7 @@ var options8 = {
 };
 var options9 = {
   host: "mc.mineberry.net",
-  username: "timm23",
+  username: "Test123",
 };
 var options10 = {
   host: "mc.mineberry.net",
@@ -94,8 +94,7 @@ bindEvents(bot14);
 
 function bindEvents(bot) {
     bot.on('login', function() {
-      console.log("I logged in.");
-      console.log("settings", bot.settings);
+      console.log(`loggged in as ${bot.username}`);
     });
 
     bot.on('kicked', function(reason) {
