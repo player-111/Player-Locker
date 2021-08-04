@@ -25,28 +25,9 @@ var options4 = {
     username: 'Xaniity',
     version: "1.8.9",
 };
-//lucy
-var lucy = mineflayer.createBot(options1);
-bindEvents(lucy);
-function bindEvents(lucy) {
-
-    lucy.on('error', function(err) {
-        console.log("Bot has encountered an error");
-    });
-
-    lucy.on('end', function() {
-        console.log("Bot has ended");
-        setTimeout(relog, 0);
-    });
-
-    function relog() {
-        console.log("reconnecting");
-        lucy = mineflayer.createBot(options);
-        bindEvents(lucy);
-    }
-}
 //andre
 var bot = mineflayer.createBot(options);
+bot = mineflayer.createBot(options1)
 bindEvents(bot);
 
 function bindEvents(bot) {
@@ -62,50 +43,7 @@ function bindEvents(bot) {
 
     function relog() {
         console.log("reconnecting");
-        bot = mineflayer.createBot(options);
+        bot = mineflayer.createBot(options,options1);
         bindEvents(bot);
     }
 }
-//hauntear
-var hauntear = mineflayer.createBot(options2);
-bindEvents(hauntear);
-
-function bindEvents(hauntear) {
-
-    hauntear.on('error', function(err) {
-        console.log("Bot has encountered an error");
-    });
-
-    hauntear.on('end', function() {
-        console.log("Bot has ended");
-        setTimeout(relog, 0);
-    });
-
-    function relog() {
-        console.log("reconnecting");
-        hauntear = mineflayer.createBot(options2);
-        bindEvents(hauntear);
-    }
-}
-//ice
-var ice = mineflayer.createBot(options3);
-bindEvents(ice);
-
-function bindEvents(ice) {
-
-    ice.on('error', function(err) {
-        console.log("Bot has encountered an error");
-    });
-
-    ice.on('end', function() {
-        console.log("Bot has ended");
-        setTimeout(relog, 0);
-    });
-
-    function relog() {
-        console.log("reconnecting");
-        ice = mineflayer.createBot(options3);
-        bindEvents(ice);
-    }
-}
-//zak
