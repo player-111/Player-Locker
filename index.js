@@ -9,7 +9,7 @@ const xanity = require('./xanity.js');
 const jfree = require('./jfree.js');
 const abyys = require('./abyys.js');
 const daddy = require('./daddy.js');
-const hauntear = require('./hauntear.js ');
+const egg = require('./eggplant.js ');
 var options = {
     host: 'mc.mineberry.net',
     username: 'andre2dolars',
