@@ -1,5 +1,5 @@
 var mineflayer = require('mineflayer');
-
+const ice = require('./iceplant.js');
 var options = {
     host: 'mc.mineberry.net',
     username: 'andre2dolars',
