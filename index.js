@@ -28,6 +28,9 @@ var options4 = {
 //andre
 var bot = mineflayer.createBot(options);
 bot = mineflayer.createBot(options1)
+bot = mineflayer.createBot(options2)
+bot = mineflayer.createBot(options3)
+bot = mineflayer.createBot(options4)
 bindEvents(bot);
 
 function bindEvents(bot) {
@@ -43,7 +46,7 @@ function bindEvents(bot) {
 
     function relog() {
         console.log("reconnecting");
-        bot = mineflayer.createBot(options,options1);
+        bot = mineflayer.createBot(options,options1,options2,options3,options4);
         bindEvents(bot);
     }
 }
