@@ -1,4 +1,4 @@
-var mineflayer = require('mineflayer');
+var flayer = require('mineflayer');
 
 var options = {
     host: 'mc.mineberry.net',
@@ -6,7 +6,7 @@ var options = {
     version: "1.8.9",
 };
 
-var bot = mineflayer.createBot(options);
+var bot = flayer.createBot(options);
 bindEvents(bot);
 
 function bindEvents(bot) {
@@ -22,7 +22,7 @@ function bindEvents(bot) {
 
     function relog() {
         console.log("reconnecting");
-        bot = mineflayer.createBot(options);
+        bot = flayer.createBot(options);
         bindEvents(bot);
     }
 }
