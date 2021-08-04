@@ -134,3 +134,57 @@ function bindEvents(bot4) {
         bindEvents(bot);
     }
 }
+
+var options5 = {
+    host: 'mc.mineberry.net',
+    username: 'Hauntear',
+    version: "1.8.9",
+};
+
+var bot5 = mineflayer.createBot(options5);
+bindEvents(bot5);
+
+function bindEvents(bot5) {
+
+    bot5.on('error', function(err) {
+        console.log("Bot has encountered an error");
+    });
+
+    bot5.on('end', function() {
+        console.log("Bot has ended");
+        setTimeout(relog, 0);
+    });
+
+    function relog() {
+        console.log("reconnecting");
+        bot = mineflayer.createBot(options5);
+        bindEvents(bot);
+    }
+}
+
+var options6 = {
+    host: 'mc.mineberry.net',
+    username: 'Jfreefortnite',
+    version: "1.8.9",
+};
+
+var bot6 = mineflayer.createBot(options6);
+bindEvents(bot6);
+
+function bindEvents(bot6) {
+
+    bot6.on('error', function(err) {
+        console.log("Bot has encountered an error");
+    });
+
+    bot6.on('end', function() {
+        console.log("Bot has ended");
+        setTimeout(relog, 0);
+    });
+
+    function relog() {
+        console.log("reconnecting");
+        bot = mineflayer.createBot(options6);
+        bindEvents(bot);
+    }
+}
