@@ -66,8 +66,8 @@ function bindEvents(bot) {
 }
 var client = mineflayer.createBot(options1);
 bindEvents(client);
-function bindEvents(bot) {
-    bot.on('end', function() {
+function bindEvents(client) {
+    client.on('end', function() {
         console.log("Bot has ended");
         setTimeout(relog, 0);
     });
