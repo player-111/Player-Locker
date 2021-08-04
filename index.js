@@ -1,39 +1,14 @@
 var mineflayer = require('mineflayer');
-const ice = require('./iceplant.js');
-const sting = require('./sting.js');
-const lucy = require('./lucy.js');
-const zak = require('./zak.js');
-const tim = require('./tim.js');
-const dxtr = require('./dxtr.js');
-const xanity = require('./xanity.js');
-const jfree = require('./jfree.js');
-const abyys = require('./abyys.js');
-const daddy = require('./daddy.js');
-const egg = require('./eggplant.js ');
-const hauntear = require('./hauntear.js ');
-var options = {
-    host: 'mc.mineberry.net',
-    username: 'andre2dolars',
-    version: "1.8.9",
-};
-
-var bot = mineflayer.createBot(options);
-bindEvents(bot);
-
-function bindEvents(bot) {
-
-    bot.on('error', function(err) {
-        console.log("Bot has encountered an error");
-    });
-
-    bot.on('end', function() {
-        console.log("Bot has ended");
-        setTimeout(relog, 0);
-    });
-
-    function relog() {
-        console.log("reconnecting");
-        bot = mineflayer.createBot(options);
-        bindEvents(bot);
-    }
-}
+const ice = require('./players/iceplant.js');
+const sting = require('./players/sting.js');
+const lucy = require('./players/lucy.js');
+const zak = require('./players/zak.js');
+const tim = require('./players/tim.js');
+const dxtr = require('./players/dxtr.js');
+const xanity = require('./players/xanity.js');
+const jfree = require('./players/jfree.js');
+const abyys = require('./players/abyys.js');
+const daddy = require('./players/daddy.js');
+const egg = require('./players/eggplant.js');
+const hauntear = require('./players/hauntear.js');
+const andre = require('./players/andre')
