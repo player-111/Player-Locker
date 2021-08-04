@@ -10,11 +10,12 @@ var options1 = {
     username: 'LucyLazy',
     version: "1.8.9",
 };
-var options = {
+var options2 = {
     host: 'mc.mineberry.net',
     username: 'Hauntear',
     version: "1.8.9",
 };
+//lucy
 var lucy = mineflayer.createBot(options1);
 bindEvents(lucy);
 function bindEvents(lucy) {
@@ -31,10 +32,10 @@ function bindEvents(lucy) {
     function relog() {
         console.log("reconnecting");
         bot = mineflayer.createBot(options);
-        bindEvents(lucy);
+        bindEvents(lucy );
     }
 }
-
+//andre
 var bot = mineflayer.createBot(options);
 bindEvents(bot);
 
@@ -55,3 +56,4 @@ function bindEvents(bot) {
         bindEvents(bot);
     }
 }
+//hauntear
